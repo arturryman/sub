@@ -1,10 +1,15 @@
 .features {
   display: flex;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .feature {
   display: flex;
 }
+
 
 .features__item {
   margin-right: rem(33px);
@@ -23,3 +28,4 @@
   font-size: rem(16px);
   max-width: rem(85px);
 }
+

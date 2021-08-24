@@ -1,3 +1,18 @@
 .order-section {
-  background: #666;
+  background: url('../img/cd318b28c9ca7b595ef1ba2ba8ffdac9.jfif');
+  background-size: cover;
+  position: relative;
+
+  &--opacity::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 30%;
+    content: "";
+  }
+
 }
+

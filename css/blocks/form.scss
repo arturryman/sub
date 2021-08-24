@@ -1,5 +1,12 @@
+
 .form {
-  display: flex;
+    display: flex;
+
+  @include tablets {
+    padding: 0 20%;
+    flex-direction: column;
+
+  }
 }
 
 .form__col {
@@ -9,11 +16,19 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include tablets {
+    margin-right: 0;
+  }
 }
 
 .form__row {
   display: flex;
   margin-bottom: rem(18px);
+
+  @include tablets {
+    margin-bottom: 0;
+  }
 }
 
 .form__block {
@@ -33,6 +48,10 @@
   &--textarea {
     height: rem(180px);
     resize: none;
+
+    @include tablets {
+    height: rem(80px);
+    }
   }
 
   &:focus {
@@ -52,6 +71,12 @@
   &--checkbox {
     margin-bottom: rem(46px);
   }
+}
+
+
+.form__btns {
+  display: flex;
+  justify-content: center;
 }
 
 .radio {

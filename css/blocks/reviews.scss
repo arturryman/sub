@@ -6,11 +6,22 @@
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {
   width: rem(254px);
   height: rem(260px);
+
+  @include tablets {
+  width: rem(130px);
+  height: rem(132px);
+  }
 }
 
 .reviews__avatar-img {
@@ -43,3 +54,26 @@
   display: flex;
   justify-content: center;
 }
+
+.reviews__list {
+  position: relative;
+  min-height: 280px;
+}
+
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: .3s;
+  opacity: 0;
+}
+

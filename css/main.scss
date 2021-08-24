@@ -19,7 +19,6 @@ $yellow: #FEDB3F;
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 
 
-
 @import "blocks/hero.scss";
 @import "blocks/header.scss";
 @import "blocks/features.scss";
@@ -32,5 +31,8 @@ $yellow: #FEDB3F;
 @import "blocks/interactive-avatar.scss";
 @import "blocks/order.scss";
 @import "blocks/form.scss";
-@import "blocks/fixed-menu.scss"
+@import "blocks/fixed-menu.scss";
+@import "blocks/hamberger.scss";
+@import "blocks/team.scss";
+@import "blocks/product-slider.scss";
 
